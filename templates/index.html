@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rentass Para Estudiantes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>🏠 Renta Para Estudiantes</h1>
+        <p>Encuentra tu cuarto ideal cerca de tu universidad</p>
+    </header>
+
+<form action="/" method="GET"> 
+    <input type="number" name="precio_maximo" placeholder="Precio máximo">
+    <button type="submit">Buscar</button>
+</form>
+
+    <div class="contenedor-rentas">
+
+        {% for renta in rentas %}
+        <div class="tarjeta">
+            <h2>{{ renta["titulo"] }}</h2>
+            <p>📍 {{ renta["direccion"] }}</p>
+            <p class="precio">💰 ${{ renta["precio"] }} / mes</p>
+            <p>📞 {{ renta["contacto"] }}</p>
+            <a class="boton" href="#">Contactar</a>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</body>
+</html>
