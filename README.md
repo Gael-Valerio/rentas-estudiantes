@@ -1,18 +1,18 @@
-# Renta Para Estudiantes
-Plataforma para encontrar rentas para estudiantes
+# Rentals For Students
+Platform to find rentals for students
 
-## Tecnologías
+## Technologies
 - Python
 - Flask
 - SQLite
 
-## Instalacion
-- Clonar el respositorio
-- Instalar Flask
-- Crear la base de datos
-- Correr el servidor
+## Instalation
+- Clone the repository
+- Install flask
+- Create the database
+- Run the server
 
-## Comandos
+## Commands
 ``` 
 git clone https://github.com/Gael-Valerio/rentas-estudiantes.git
 pip install flask
